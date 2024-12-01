@@ -55,11 +55,11 @@ disp("Testing RMSE of the ANFIS: "+ sqrt(mse));
 
 % Plot the resultant FIS for ANFIS
 figure;
-plotmf(anfis1,'input',1)
+plotmf(anfis,'input',1)
 title("Input 1 - Membership functions")
 
 figure
-plotmf(anfis1,'input',2)
+plotmf(anfis,'input',2)
 title("Input 2 - Membership functions")
 
 % ..repeat if you have more
