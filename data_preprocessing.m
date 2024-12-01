@@ -7,8 +7,8 @@ features = ["gender", "length", "diameter", "height", "total_weight", "flesh_wei
 data.Properties.VariableNames = features;
 
 % split into training and testing (you can change the ratio and input data)
-input_features = ["length", "diameter", "height", "total_weight"];
-outputs = ["gender"];
+input_features = []; % insert your own features!!
+outputs = ["age"];
 train_ratio = 0.80;     % the remaining will be used for testing
 
 [trainX, trainY, testX, testY] = data_split(data, input_features, outputs, train_ratio);
